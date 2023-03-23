@@ -11,7 +11,7 @@ body {
   display: flex;
   color: white;
   align-items: center;
-  padding:0px 100px;
+  padding:0px 150px;
 }
 
 .logo {
@@ -40,7 +40,7 @@ a, .subtext {
 .hero {
   /*flex container: border: 3px solid red;*/
   display: flex;
-  padding: 75px 100px 50px;
+  padding: 75px 150px 100px;
   justify-content: center;
   background-color: #1f2937;
 }
@@ -73,15 +73,21 @@ a, .subtext {
   color:#F9FAF8;
 }
 
-button {
+.hbutton {
   align-self: flex-start;
   background-color: #3882F6;
-  border: #1f2937;
   color: white;
-  padding: 8px 24px;
+  padding: 7px 30px;
   font-weight: bold;
   border-radius: 8px;
   margin-top: 16px;
+  border: 2px solid #3882F6;
+  transition-duration: 0.4s;
+}
+
+.hbutton:hover {
+  background-color: white;
+  color: #3882F6;
 }
 
 .subtext {
@@ -111,7 +117,7 @@ button {
   display: flex;
   gap: 52px;
   text-align: center;
-  padding: 10px 100px 75px 100px;
+  padding: 10px 100px 100px;
   justify-content: center;
 }
 
@@ -120,4 +126,94 @@ button {
  color: #646b74;
  font-size: 24px;
 
+}
+
+.quote {
+  display: flex;
+  background-color: #E5E7EB;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 75px 0px 50px;
+}
+
+.quotetxt {
+  font-size: 36px;
+  font-style: italic;
+  color: #454648;
+}
+
+.credit {
+  font-weight: bold;
+  font-size: 18px;
+  width: 110px;
+  text-align: end;
+  margin-top: 4px;
+  color: #1F2937;
+}
+
+.cta {
+  /*flex container: border: 3px solid red;*/
+  background-color: white;
+  padding: 75px 150px;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 0;
+}
+
+.signup {
+  display: flex;
+  border-radius: 8px;
+  border: 2px solid #3882F6;
+  flex: 1 1 auto;
+  padding: 10px 100px;
+  background-color: #3882F6;
+  height: 125px;
+}
+
+.lcta, .rcta {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+  flex:1 1 auto;
+}
+
+.rcta {
+  flex-shrink: 0;
+}
+
+.cttitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cinfo {
+  color: #ccd3dd;
+  font-size: 18px;
+}
+
+.cbutton {
+  background-color: #3882F6;
+  color: white;
+  padding: 7px 30px;
+  font-weight: bolder;
+  border-radius: 8px;
+  align-self: center;
+  border: 2px solid white;
+}
+
+.cbutton:hover {
+  background-color: white;
+  color: #3882F6;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+  padding: 30px;
 }
